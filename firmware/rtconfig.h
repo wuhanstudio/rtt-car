@@ -99,6 +99,8 @@
 #define RT_USING_SERIAL
 #define RT_SERIAL_USING_DMA
 #define RT_SERIAL_RB_BUFSZ 64
+#define RT_USING_I2C
+#define RT_USING_I2C_BITOPS
 #define RT_USING_PIN
 #define RT_USING_PWM
 #define RT_USING_SDIO
@@ -299,6 +301,33 @@
 #define SDIO_MAX_FREQ 24000000
 #define SDIO_ALIGN_LEN 32
 #define PKG_USING_STM32_SDIO_V102
+#define PKG_USING_U8G2
+
+/* U8G2 Examples */
+
+
+/* full buffer examples    (fast, large RAM consumption) */
+
+
+/* page buffer examples    (slow, small RAM consumption) */
+
+
+/* u8x8 text only examples (fonts with fixed size)       */
+
+
+/* game examples */
+
+#define PKG_USING_U8G2_CPP_LATEST_VERSION
+
+/* C   version: v1.x.x */
+
+/* C++ version: v2.x.x */
+
+#define PKG_U8G2_VER_NUM 0x29999
+#define PKG_USING_I2C_TOOLS
+#define I2C_TOOLS_USE_SW_I2C
+#define I2C_TOOLS_SW_ACK_TIMEOUT 100
+#define PKG_USING_I2C_TOOLS_LATEST_VERSION
 
 /* miscellaneous packages */
 

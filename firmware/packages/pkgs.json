@@ -38,5 +38,15 @@
   "path": "/packages/peripherals/stm32_sdio", 
   "ver": "v1.0.2", 
   "name": "STM32_SDIO"
+ }, 
+ {
+  "path": "/packages/peripherals/u8g2", 
+  "ver": "cpp-latest", 
+  "name": "U8G2"
+ }, 
+ {
+  "path": "/packages/peripherals/i2c_tools", 
+  "ver": "latest", 
+  "name": "I2C_TOOLS"
  }
 ]
