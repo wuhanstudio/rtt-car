@@ -1,0 +1,42 @@
+[
+ {
+  "path": "/packages/iot/webnet", 
+  "ver": "v2.0.1", 
+  "name": "WEBNET"
+ }, 
+ {
+  "path": "/packages/iot/netutils", 
+  "ver": "v1.1.0", 
+  "name": "NETUTILS"
+ }, 
+ {
+  "path": "/packages/iot/protobuf-c", 
+  "ver": "latest", 
+  "name": "PROTOBUF_C"
+ }, 
+ {
+  "path": "/packages/iot/onnx-parser", 
+  "ver": "latest", 
+  "name": "ONNX_PARSER"
+ }, 
+ {
+  "path": "/packages/iot/onnx-backend", 
+  "ver": "latest", 
+  "name": "ONNX_BACKEND"
+ }, 
+ {
+  "path": "/packages/tools/EasyFlash", 
+  "ver": "v3.2.1", 
+  "name": "EASYFLASH"
+ }, 
+ {
+  "path": "/packages/system/fal", 
+  "ver": "v0.2.0", 
+  "name": "FAL"
+ }, 
+ {
+  "path": "/packages/peripherals/stm32_sdio", 
+  "ver": "v1.0.2", 
+  "name": "STM32_SDIO"
+ }
+]

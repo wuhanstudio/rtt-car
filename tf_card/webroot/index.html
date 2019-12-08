@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Digit Recognition</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Page CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Page JS -->
+    <script type="text/javascript" src="mnist.js"></script>
+    <script>
+        window.onload = function() {
+            prepareCanvas();
+        };
+    </script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body class="body-style">
+    <br />
+    <center><h1 class="display-4"> Hello Server</h1></center>
+
+    <div class="container2">
+        <div class="row">
+            <div class="col col-6">
+                <img class="stream" src="http://192.168.199.208:8080/?action=stream" />
+            </div>
+            <div class="col col-6">
+                <div class="row" style="margin-top:5%;">
+                    <p> 服务器的小车</p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" id="btn_left"  class="btn btn-primary btn-lg">←</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" id="btn_run" class="btn btn-primary btn-lg">↑</button>
+                    </div>
+                    <div class="col">
+                            <button type="button" id="btn_back" class="btn btn-primary btn-lg">↓</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" id="btn_right" class="btn btn-primary btn-lg">→</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" id="btn_stop" class="btn btn-primary btn-lg">x</button>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:5%;">
+                        <p> 别人家的小车</p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="button" id="obtn_left"  class="btn btn-primary btn-lg">←</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" id="obtn_run" class="btn btn-primary btn-lg">↑</button>
+                        </div>
+                        <div class="col">
+                                <button type="button" id="obtn_back" class="btn btn-primary btn-lg">↓</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" id="obtn_right" class="btn btn-primary btn-lg">→</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" id="obtn_stop" class="btn btn-primary btn-lg">×</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <center><h1 class="display-4"> Hello ONNX</h1></center>
+
+    <div class="container">
+        <center>
+            <div class="">
+                <canvas id="drawingCanvas" class="canvas-style"></canvas>
+                <canvas id="auxCanvas" style="display: none"></canvas>
+            </div>
+        </center>
+        <div class="row mt-4">
+            <div class="col col-6">
+                <button type="button" id="clearCanvasButton" class="btn btn-primary btn-lg" style="margin-left: 30%; width: 40%;" onclick="clearCanvas();">Clear</button>
+            </div>
+            <div class="col col-6">
+                <button type="button" id="sendButton" class="btn btn-primary btn-lg" style="margin-left: 30%; width: 40%;" onclick="recognizeDigit();">Recognize</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
